@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8">
+	<title>Calculadora 2.0</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="calculadora.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Calculadora</h1>
+	</header>
+	<div class="contentenedor">
+
+<!------------ pantalla ---------->
+		<div class="calc-screen">
+			<div class="border-screen">
+				<div id="mem"></div>
+				<div id="operator"></div>
+				<div id="screen">0</div>
+			</div>
+		</div>
+
+<!------------ numeros ---------->
+		<div class="calc-numbers">
+			<ul>
+				<li><button onclick="numeros(7)">7</button></li>
+				<li><button onclick="numeros(8)">8</button></li>
+				<li><button onclick="numeros(9)">9</button></li>
+				<li><button onclick="numeros(4)">4</button></li>
+				<li><button onclick="numeros(5)">5</button></li>
+				<li><button onclick="numeros(6)">6</button></li>
+				<li><button onclick="numeros(1)">1</button></li>
+				<li><button onclick="numeros(2)">2</button></li>
+				<li><button onclick="numeros(3)">3</button></li>
+				<li><button class="double-hor" onclick="numeros(0)">0</button></li>
+				<li><button class="key-number" onclick="coma()">.</button></li>
+			</ul>
+		</div>
+
+<!------------ operaciones ---------->
+		<div class="calc-oper">
+			<ul>
+				<li><button class="key-azul" onclick="multiplicar()">x</button></li>
+				<li><button class="key-azul" onclick="resta()">-</button></li>
+				<li><button class="key-red double-vert" onclick="suma()">+</button></li>
+			</ul>
+			<ul>
+				<li><button class="key-azul" onclick="dividir()">/</button></li>
+				<li><button class="key-azul" onclick="porcentaje()">%</button></li>
+				<li><button class="key-azul" onclick="c_button()">c</button></li>
+				<li><button class="key-equal" onclick="igual()">=</button></li>
+			</ul>
+			<ul>
+				<li><button class="key-red double-vert" onclick="del_button()">Del</button></li>
+				<li><button class="key-opp" onclick="mc_button()">mc</button></li>
+				<li><button class="key-opp" onclick="memory()">M</button></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<footer>
+		<p>Diseñado por <a href="http://lacueva.tv" title="LaCueva.tv" target="_blank">LaCueva.tv</a></p>
+	</footer>
+</body>
+</html>
