@@ -1,2 +1,5 @@
 # calculadora
-Simple, JS
+
+Ver online:
+
+http://lacueva.tv/demo/calc/
